@@ -8,11 +8,24 @@
     <title>CSS Grid</title>
   </head>
   <body>
-    <p>Hello</p>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+    </div>
     <style>
-      p {
-        font-size: 20px;
-        background-color: var(--yellow);
+      .container {
+        display: grid;
+        grid-template-columns: 200px 350px;
+        grid-template-rows: 100px 250px 400px;
+        grid-gap: 20px;
       }
     </style>
   </body>
